@@ -1,0 +1,28 @@
+{
+  "name": "coffee-cr-taiwan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonsieurMoia/coffee-cr-taiwan.git"
+  },
+  "author": "moiacr@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonsieurMoia/coffee-cr-taiwan/issues"
+  },
+  "homepage": "https://github.com/MonsieurMoia/coffee-cr-taiwan#readme",
+  "dependencies": {
+    "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1"
+  }
+}
