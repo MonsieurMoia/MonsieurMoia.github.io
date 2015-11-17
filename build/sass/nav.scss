@@ -1,0 +1,16 @@
+// Nav
+
+.header-nav {
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  padding: 1em 0;
+  z-index: 2;
+
+  .nav-brand {
+    @extend .sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
+  }
+}

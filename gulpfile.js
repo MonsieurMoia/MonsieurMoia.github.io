@@ -79,7 +79,7 @@ gulp.task('serve', ['sass','js'], function(){
         }
     });
 
-  gulp.watch('./build/sass/**/*.scss' , ['sass']);
+  gulp.watch('./build/sass/*' , ['sass']);
   gulp.watch('./build/js/**/*.js' , ['js', browserSync.reload]);
   gulp.watch('./index.html').on('change', browserSync.reload);
 });

@@ -4,9 +4,75 @@
   <meta charset="UTF-8">
   <title>Get Coffee from Costa Rica in Taiwan</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./build/libs/animate.min.css">
 </head>
 <body>
-  <h1>TEST</h1>
+
+  <header>
+    <nav class="header-nav">
+      <div class="container">
+        <a href="" class="nav-brand">COSTAI</a>
+        <small class="op5 sans-serif">Coffee Distributors in Taiwan</small>
+      </div>
+    </nav>
+    <div class="container text-center">
+      <h1 class="sans-serif wow fadeInUp">Get Coffee from <br> <em>Costa Rica</em> in <em>Taiwan</em></h1>
+      <button class="btn open-order" id="order_now" >Order Now</button>
+      <a href="" class="open-order">Order a Free Sample</a>
+    </div>
+    <video autoplay id="bgvid" loop>
+    <!-- <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm"> -->
+    <source src="./assets/CoffeeIntro.mp4" type="video/mp4">
+    </video>
+  </header>
+
+  <section id="shop-owner">
+    <h2 class="wow fadeInUp">Are you a coffee shop owner?</h2>
+    <button class="btn open-order">Get Free Coffee Samples</button>
+  </section>
+
+  <section id="coffee-distributor" class="text-center">
+    <h2 class="wow fadeInUp">Do you want to be a coffee distributor</h2>
+    <button class="btn open-order">Learn How</button>
+  </section>
+
+  <section id="available-coffees" class="text-center">
+    <h2 class="wow fadeIn">Available Coffees</h2>
+  </section>
+
+  <section class="divided">
+    <div id="section-light-roast">
+      <h3 class="wow fadeIn">Light Roast</h3>
+      <figure>
+        <img src="" alt="">
+        <figcaption>Hermosa Coffee</figcaption>
+      </figure>
+    </div>
+    <div id="section-medium-roast">
+      <h3 class="wow fadeIn">Medium Roast</h3>
+      <figure>
+        <img src="" alt="">
+        <figcaption>Quetzal Coffee</figcaption>
+      </figure>
+      <figure>
+        <img src="" alt="">
+        <figcaption>Dota Coffee</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="sidebar" id="sidebar">
+    <div class="order-form">
+      <form action="">
+        <legend>Order</legend>
+      </form>
+    </div>
+  </div>
+
   <script src="index.js"></script>
+  <script src="./build/libs/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
 </body>
 </html>
