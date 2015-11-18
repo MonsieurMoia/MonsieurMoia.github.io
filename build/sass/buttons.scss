@@ -1,0 +1,25 @@
+// Buttons
+
+a, button {
+  &.btn {
+    background:rgba(0,0,0,.1);
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    display: block;
+    margin: auto;
+    padding: .3em 2em;
+    font-size: 1.1em;
+    &:hover {
+      background-color: rgba(0,0,0,.2);
+    }
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  display: inline-block;
+  font-size: .8em;
+}

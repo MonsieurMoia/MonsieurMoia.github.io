@@ -1,0 +1,50 @@
+// Utilities
+
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+
+.container {
+  max-width: 1024px;
+  padding: 0 15px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+
+
+// Opacity
+.op5 {
+  opacity: .5;
+}
+
+figure {
+  display: inline-block;
+  img {
+    width: 3em;
+    height: 5em;
+  }
+  figcaption {
+    font-size: .8em;
+    @extend .op5;
+  }
+}
+
+legend {
+  @extend .sans-serif;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 .5em;
+  font-size: 1.2em;
+}
+
+fieldset {
+  border: none;
+}
+
+hr {
+  outline: none;
+  border:none;
+  display: block;
+  height: 1em;
+}

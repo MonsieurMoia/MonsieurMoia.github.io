@@ -1,0 +1,36 @@
+// Type
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,700italic,400italic);
+
+// Usage
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Arvo', serif;
+
+
+body {
+  font-family: 'Arvo', serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sans-serif {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.serif {
+  font-family: 'Arvo', serif;
+}
+
+em {
+  @extend .serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
