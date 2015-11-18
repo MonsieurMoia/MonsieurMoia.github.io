@@ -405,7 +405,7 @@ body {
   font-weight: 400; }
 
 /* line 18, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/type.scss */
-.sans-serif, .header-nav .nav-brand {
+.sans-serif, legend, .header-nav .nav-brand {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
@@ -453,6 +453,24 @@ figure {
   /* line 27, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/utilities.scss */
   figure figcaption {
     font-size: .8em; }
+
+/* line 33, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/utilities.scss */
+legend {
+  font-weight: 700;
+  display: block;
+  margin: 0 0 .5em;
+  font-size: 1.2em; }
+
+/* line 41, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/utilities.scss */
+fieldset {
+  border: none; }
+
+/* line 45, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/utilities.scss */
+hr {
+  outline: none;
+  border: none;
+  display: block;
+  height: 1em; }
 
 /* line 4, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/header.scss */
 header {
@@ -556,26 +574,41 @@ a {
 
 /* line 3, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
 .sidebar {
-  display: none; }
-  /* line 5, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%); }
+  /* line 13, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
   .sidebar.open {
-    position: fixed;
-    display: block;
+    transform: translateX(0%); }
+  /* line 17, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
+  .sidebar .order-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    min-width: 400px;
+    height: 100%;
+    position: absolute;
     right: 0;
     top: 0;
     z-index: 3;
-    width: 100%;
-    height: 100%; }
-    /* line 13, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
-    .sidebar.open .order-form {
-      background-color: rgba(255, 255, 255, 0.9);
-      min-width: 400px;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 3; }
+    padding: 2em;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2); }
+  /* line 28, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
+  .sidebar a {
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    color: purple; }
+    /* line 35, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
+    .sidebar a.active, .sidebar a:hover {
+      border: 2px solid purple;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
 
-/* line 25, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
+/* line 44, /Users/monsieurmoia/Documents/PipiCafe/coffee-cr-taiwan/build/sass/sidebar.scss */
 body.noscroll {
   overflow: hidden; }
